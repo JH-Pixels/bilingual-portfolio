@@ -1,3 +1,4 @@
+// language switch
 document.addEventListener("DOMContentLoaded", function () {
 	const frBtn = document.getElementById("frBtn");
 	const enBtn = document.getElementById("enBtn");
@@ -20,3 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		otherLangBtn.classList.remove("active-button");
 	}
 });
+
+// nav
+const nav = document.querySelector("nav");
+window.addEventListener("scroll", fixNav);
+
+function fixNav() {
+	if (window.scrollY > nav.offsetHeight + 150) {
+		nav.classList.add("active");
+	} else {
+		nav.classList.remove("active");
+	}
+}
