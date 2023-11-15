@@ -1,0 +1,28 @@
+.lang-switch button {
+	opacity: 0.5;
+	transition: all 0.5s;
+	margin: auto 3px;
+}
+
+.lang-switch button:hover {
+	cursor: pointer;
+	opacity: 1;
+	font-weight: 700;
+}
+
+.fr_lang,
+.en_lang {
+	transition: display 0.5s;
+}
+
+/* Language */
+.inactive-lang {
+	display: none !important;
+	transition: display 0.5s;
+}
+
+.active-button {
+	transition: all 0.5s;
+	opacity: 1 !important;
+	font-weight: 700;
+}
