@@ -11,7 +11,6 @@
 body {
 	font-family: "Open Sans", sans-serif;
 	color: #222;
-	padding-bottom: 50px;
 }
 
 h1,
@@ -24,6 +23,8 @@ h3 {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+/* Navbar */
 
 nav {
 	position: fixed;
@@ -78,6 +79,7 @@ nav a:hover {
 	text-shadow: 2px 0px 10px rgba(255, 255, 255, 0.8);
 }
 
+/* Language */
 .lang-switch {
 	margin-right: 15px;
 }
@@ -99,7 +101,6 @@ nav a:hover {
 	font-weight: 700;
 }
 
-/* Language */
 .fr_lang,
 .en_lang {
 	transition: display 0.5s;
@@ -116,4 +117,55 @@ nav a:hover {
 	font-weight: 700;
 }
 
-/* Navbar */
+/* Hero */
+.hero {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* Sections */
+section {
+	padding: 70px 25px 20px;
+	min-height: calc(100vh - 45px);
+}
+
+section p {
+	padding-bottom: 15px;
+}
+
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.project {
+	margin: 10px;
+	max-width: 300px;
+}
+
+/* Footer */
+footer {
+	background-color: #222;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 45px;
+	padding: 5px 20px;
+	font-size: 14px;
+}
+
+footer .links {
+	width: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.links i {
+	font-size: 20px;
+	color: #fff;
+}
