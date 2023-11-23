@@ -230,3 +230,35 @@ footer .links {
 	font-size: 20px;
 	color: #fff;
 }
+
+@media (max-width: 545px) {
+	nav {
+		height: 120px;
+	}
+
+	nav ul {
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		width: 100%;
+		padding-top: 5px;
+	}
+
+	nav ul a {
+		padding: 0 10px;
+	}
+
+	nav.active {
+		height: 80px;
+	}
+
+	nav.active ul {
+		bottom: 10px;
+	}
+
+	section {
+		padding-top: 95px;
+	}
+}
