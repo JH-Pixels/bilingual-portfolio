@@ -50,6 +50,7 @@ nav {
 	left: 0;
 	right: 0;
 	transition: all 0.3s ease-in-out;
+	z-index: 1;
 }
 
 nav .container {
@@ -142,12 +143,8 @@ nav.active .container {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	z-index: -1;
 }
-.hero div.container {
-	position: absolute;
-	color: #fff;
-}
+
 .hero div.background {
 	height: 100vh;
 	width: 100vw;
@@ -156,6 +153,65 @@ nav.active .container {
 	/* background-color: #001b2e;
 	background-image: url("data:image/svg+xml,%3Csvg width='168' height='96' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23f9f871' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E"); */
 	/* filter: blur(1px); */
+}
+
+.hero div.container {
+	position: absolute;
+	top: 30%;
+	color: #fff;
+	background-color: var(--color-1);
+	padding: 45px;
+	border: solid 3px #1a3e3c;
+	border-radius: 1px;
+}
+
+.hero h1 {
+	font-size: 54px;
+	font-weight: 300;
+	text-shadow: #ffffff2d;
+}
+
+.hero h2 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 20px 0 40px;
+	display: inline-block;
+	border-bottom: solid 3px var(--color-4);
+}
+
+.hero h2 span {
+	background-color: var(--color-4);
+
+	padding: 0 5px;
+}
+
+.hero p {
+	margin-top: 60px;
+	letter-spacing: 2px;
+}
+
+.btn-group {
+	margin: 20px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.btn-group .btn {
+	margin: 10px 15px;
+	border: solid 1px var(--color-4);
+	border-radius: 30px;
+	padding: 8px 16px;
+	color: #fff;
+	letter-spacing: 2px;
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-group .btn:hover {
+	background-color: var(--color-4);
 }
 
 /* Sections */
