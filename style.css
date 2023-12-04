@@ -213,7 +213,7 @@ nav.active .container {
 	justify-content: center;
 }
 
-.btn-group .btn {
+.btn {
 	margin: 15px;
 	border: solid 1px var(--color-4);
 	border-radius: 30px;
@@ -226,12 +226,14 @@ nav.active .container {
 	min-width: 180px;
 }
 
-.btn-group .btn-primary {
+.btn-primary {
 	background-color: var(--color-4);
 }
 
-.btn-group .btn:hover {
+.btn:hover {
+	cursor: pointer;
 	background-color: var(--color-4);
+	scale: 0.99;
 }
 
 /* Sections */
@@ -342,6 +344,50 @@ section .sub-group p {
 			padding-box,
 		linear-gradient(to right, #00465c, #00767a, #0fa681, #89d377) border-box;
 	color: #fff;
+}
+
+/* Contact */
+
+.contact-form {
+	background-color: #eee;
+	border-radius: 4px;
+	padding: 20px 25px;
+	max-width: 450px;
+	margin: 20px auto;
+}
+
+.contact-form label {
+	font-size: 14px;
+}
+
+.contact-form input#name,
+.contact-form input#email {
+	width: 100%;
+	margin: 8px 0;
+	height: 36px;
+	padding: 5px;
+	border: 1px solid var(--color-4);
+	border-radius: 4px;
+}
+
+.contact-form textarea#message {
+	width: 100%;
+	height: 150px;
+	margin: 8px 0;
+	border: 1px solid var(--color-4);
+	padding: 3px;
+	border-radius: 4px;
+}
+
+.contact-form input#name:focus-visible,
+.contact-form input#email:focus-visible,
+.contact-form textarea:focus-visible {
+	outline: none;
+}
+
+.contact-form .btn {
+	display: block;
+	margin: 10px auto;
 }
 
 /* Footer */
