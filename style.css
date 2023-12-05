@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Megrim:regular);
-@import url(https://fonts.googleapis.com/css?family=Yrsa:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,regular,500,600,700,800);
 
 :root {
 	--color-1: #001b2e;
@@ -27,8 +27,10 @@ body {
 h1,
 h2,
 h3 {
-	font-family: "Yrsa";
+	font-family: "Dosis";
 	font-weight: 400;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
 }
 
 .container {
@@ -153,7 +155,7 @@ nav.active .container {
 .hero div.container {
 	position: absolute;
 	color: #fff;
-	background-color: var(--color-1);
+	background-color: rgba(0, 27, 46, 0.8);
 	padding: 45px 65px;
 	border: solid 3px #1a3e3c;
 	border-radius: 1px;
@@ -163,6 +165,7 @@ nav.active .container {
 	font-size: 54px;
 	font-weight: 300;
 	text-shadow: #ffffff2d;
+	letter-spacing: 4px;
 }
 
 .hero h2 {
@@ -198,6 +201,7 @@ nav.active .container {
 .intro p {
 	letter-spacing: 2px;
 	margin: 10px 0;
+	font-weight: 300;
 }
 
 .btn-group {
@@ -268,16 +272,25 @@ section p {
 	line-height: 26px;
 }
 
+section p span {
+	color: var(--color-4);
+}
+
+section p span::before,
+section p span::after {
+	content: "*";
+	color: var(--color-4);
+	font-weight: bold;
+}
+
 section p a {
-	background-color: var(--color-6);
+	border-bottom: solid 4px var(--color-6);
 	text-decoration: none;
 	color: var(--color-1);
-	padding: 0 3px 3px;
 }
 
 section p a:hover {
-	background-color: var(--color-4);
-	color: #fff;
+	background-color: var(--color-6);
 }
 
 section p strong {
@@ -297,7 +310,8 @@ section .sub-group {
 
 section .sub-group p {
 	font-size: 14px;
-	line-height: 24px;
+	line-height: 25px;
+	margin-top: 10px;
 }
 
 .projects {
@@ -312,7 +326,7 @@ section .sub-group p {
 }
 
 .project {
-	margin: 10px;
+	margin: 30px 10px;
 	max-width: 320px;
 	background-color: #fff;
 	padding: 20px;
@@ -377,7 +391,7 @@ section .sub-group p {
 /* Contact */
 
 .contact-form {
-	background-color: #eee;
+	background-color: #f3f3f3;
 	border-radius: 4px;
 	padding: 20px 25px;
 	max-width: 450px;
