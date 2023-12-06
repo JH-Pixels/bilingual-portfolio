@@ -329,7 +329,7 @@ section .sub-group p {
 }
 
 .project {
-	margin: 30px 10px;
+	margin: 30px 20px;
 	max-width: 320px;
 	background-color: #fff;
 	padding: 20px;
@@ -368,12 +368,12 @@ section .sub-group p {
 	font-size: 14px;
 	font-size: 14px;
 	line-height: 26px;
-	min-height: 155px;
+	min-height: 165px;
 }
 
 .project .project-btn-container {
 	text-align: center;
-	margin: 10px 0;
+	margin: 10px 0 20px;
 }
 
 .project .project-btn {
@@ -439,13 +439,16 @@ section .sub-group p {
 /* Footer */
 footer {
 	background-color: #222;
-	color: #fff;
+	color: #eee;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 45px;
 	padding: 5px 20px;
+	font-family: "Dosis";
 	font-size: 14px;
+	letter-spacing: 2px;
+	font-weight: 200;
 }
 
 footer .links {
@@ -472,10 +475,6 @@ footer .links {
 		padding: 15px 0;
 	}
 
-	nav a.logo {
-		font-size: 12px;
-	}
-
 	nav ul {
 		position: absolute;
 		bottom: 25px;
@@ -488,7 +487,7 @@ footer .links {
 
 	nav ul a {
 		padding: 0 10px;
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	nav.active {
@@ -504,6 +503,10 @@ footer .links {
 		text-wrap: wrap;
 	}
 
+	.hero div.background {
+		height: 100vh;
+	}
+
 	.hero div.container {
 		padding: 25px 15px;
 		top: 40%;
@@ -511,7 +514,7 @@ footer .links {
 	}
 
 	.hero h1 {
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 42px;
 	}
 
@@ -560,7 +563,7 @@ footer .links {
 	}
 
 	.project {
-		margin: 15px 10px;
+		margin: 20px 10px;
 	}
 
 	.project img {
