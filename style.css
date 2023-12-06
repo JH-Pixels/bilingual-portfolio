@@ -154,10 +154,10 @@ nav.active .container {
 	position: absolute;
 	color: #fff;
 	background-color: rgba(0, 27, 46, 0.8);
-	padding: 65px;
+	padding: 65px 85px;
 	border: solid 3px #1a3e3c;
 	border-radius: 1px;
-	width: 50vw;
+	width: auto;
 	box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -179,6 +179,8 @@ nav.active .container {
 	background-color: var(--color-2);
 	padding: 4px 8px;
 	font-weight: 400;
+
+	white-space: nowrap;
 }
 
 .hero h1 span.underline {
@@ -193,13 +195,13 @@ nav.active .container {
 	background-color: var(--color-1);
 	border: solid 3px #1a3e3c;
 	border-radius: 1px;
-	padding: 30px 0 15px;
+	padding: 30px 10px 15px;
 	text-align: center;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	margin-top: -30px;
-	min-width: 50vw;
+	min-width: 45vw;
 	box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -339,7 +341,7 @@ section .sub-group p {
 
 .project img {
 	width: 100%;
-	height: 175px;
+	height: auto;
 	object-fit: cover right bottom;
 	border: 1px solid #eee;
 	border-radius: 2px;
@@ -509,8 +511,9 @@ footer .links {
 
 	.hero div.container {
 		padding: 25px 15px;
+		min-width: 50vw;
+		max-width: 95vw;
 		top: 40%;
-		width: 95vw;
 	}
 
 	.hero h1 {
@@ -524,7 +527,6 @@ footer .links {
 
 	.hero h1 span.highlight {
 		padding: 4px 8px;
-		white-space: nowrap;
 		display: inline;
 	}
 
@@ -564,10 +566,6 @@ footer .links {
 
 	.project {
 		margin: 20px 10px;
-	}
-
-	.project img {
-		height: auto;
 	}
 
 	.project p {
