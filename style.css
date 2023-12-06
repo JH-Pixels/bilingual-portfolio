@@ -277,6 +277,12 @@ section p {
 	line-height: 28px;
 }
 
+section p br {
+	content: "";
+	display: block;
+	margin-top: 10px;
+}
+
 section p span {
 	color: var(--color-2);
 	font-weight: 600;
