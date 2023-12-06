@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const frLang = document.querySelectorAll(".fr_lang");
 	const enLang = document.querySelectorAll(".en_lang");
 
-	switchLanguage(frLang, frBtn);
+	switchLanguage(enLang, enBtn);
 
 	frBtn.addEventListener("click", () => switchLanguage(frLang, frBtn));
 	enBtn.addEventListener("click", () => switchLanguage(enLang, enBtn));
