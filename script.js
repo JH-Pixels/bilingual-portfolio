@@ -24,12 +24,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // nav
 const nav = document.querySelector("nav");
+const footer = document.querySelector("footer");
+
 window.addEventListener("scroll", fixNav);
 
 function fixNav() {
-	if (window.scrollY > nav.offsetHeight + 150) {
-		nav.classList.add("active");
-	} else {
-		nav.classList.remove("active");
-	}
+    if (window.scrollY > nav.offsetHeight + 150) {
+        nav.classList.add("active");
+        if (nav.classList.contains("active")) {
+            footer.classList.add("fixed");
+        } else {
+            footer.classList.remove("fixed");
+        }
+    } else {
+        nav.classList.remove("active");
+        footer.classList.remove("fixed");
+    }
 }

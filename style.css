@@ -291,6 +291,23 @@ section p a:hover {
 	padding: 0 2px;
 }
 
+section#about img {
+	max-width: 300px;
+	border-radius: 50%;
+}
+
+.intro {
+	display: flex;
+	margin-top: 40px;
+}
+
+.profile-pic {
+	max-width: 300px;
+	max-height: 300px;
+	border-radius: 50%;
+	margin-right: 40px;
+}
+
 section .columns {
 	margin-top: 50px;
 	display: flex;
@@ -441,6 +458,13 @@ footer {
 	font-weight: 200;
 }
 
+footer.fixed {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
 footer .links {
 	width: 100px;
 	display: flex;
@@ -575,7 +599,21 @@ footer .links {
 	footer {
 		font-size: 12px;
 	}
+
 	footer .links {
 		width: 80px;
+	}
+}
+
+@media (max-width: 480px) {
+	.intro {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	.profile-pic {
+		margin-right: 0;
+		margin-bottom: 10px;
 	}
 }
