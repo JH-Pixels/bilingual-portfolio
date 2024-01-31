@@ -353,6 +353,11 @@ section .sub-group p {
 	margin-bottom: 10px;
 }
 
+.project h3 a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .project .projects-icon {
 	display: flex;
 	margin: 15px 0 10px;
@@ -404,7 +409,7 @@ section .sub-group p {
 }
 
 .project-main img {
-	max-width: 280px;
+	max-width: 320px;
 	float: left;
 	margin-right: 30px;
 }
