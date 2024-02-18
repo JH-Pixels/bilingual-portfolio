@@ -195,20 +195,20 @@ nav.active .container {
 	padding-right: 2px;
 }
 
-.hero .btn-group {
+.btn-group {
 	display: flex;
 	justify-content: center;
 	margin-top: 15px;
 	text-shadow: none;
 }
 
-.hero .btn-group a {
+.btn-group a {
 	text-align: center;
 }
 
 .btn {
 	min-width: 180px;
-	padding: 8px 16px;
+	padding: 8px 20px;
 	margin: 15px;
 	border: solid 1px var(--color-2);
 	border-radius: 30px;
