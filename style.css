@@ -485,7 +485,7 @@ footer.fixed {
 }
 
 footer .links {
-	width: 100px;
+	width: 120px;
 	display: flex;
 	justify-content: space-between;
 }
