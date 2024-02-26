@@ -423,6 +423,10 @@ section .sub-group p {
 	min-height: auto;
 }
 
+#portfolio .btn-group {
+	margin-top: 0;
+}
+
 /* Contact */
 
 .contact-form {
@@ -632,7 +636,7 @@ footer .links {
 	}
 
 	footer .links {
-		width: 80px;
+		width: 120px;
 	}
 }
 
@@ -646,5 +650,9 @@ footer .links {
 	.profile-pic {
 		margin-right: 0;
 		margin-bottom: 10px;
+	}
+
+	#portfolio .sub-group {
+		margin-top: 50px;
 	}
 }
