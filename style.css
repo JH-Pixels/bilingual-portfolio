@@ -570,11 +570,13 @@ footer .links {
 .services.expertise {
 	display: flex;
 	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 .services.expertise div.text {
 	flex: 2;
 	padding-right: 30px;
+	padding-bottom: 80px;
 }
 
 .services.expertise div.text img {
@@ -636,6 +638,7 @@ footer .links {
 	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 15px;
 }
 
 .services .offer li {
