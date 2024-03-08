@@ -1,6 +1,10 @@
 /* Services */
 section {
-	padding: 50px 25px;
+	padding: 25px 25px 0 25px;
+}
+
+section h2 {
+	margin-bottom: 30px;
 }
 
 .services.branding {
@@ -24,7 +28,7 @@ section {
 }
 
 .services.branding div {
-	height: 100%;
+	height: 80%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -63,40 +67,41 @@ section {
 	font-family: "Dosis";
 }
 
-.services.expertise {
+.services#expertise {
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	margin-top: 20px;
 }
 
-.services.expertise div.text {
+.services#expertise div.text {
 	flex: 3;
 	padding-right: 30px;
 }
 
-.services.expertise div.text img {
+.services#expertise div.text img {
 	max-width: 260px;
 	float: left;
 	margin: 20px 20px 20px 0;
 }
 
-.services.expertise div.quote {
+.services#expertise div.quote {
 	flex: 1;
 }
 
-.services.expertise ul {
+.services#expertise ul {
 	padding: 0 50px;
 }
 
-.services.expertise li {
+.services#expertise li {
 	margin: 10px 0;
 }
 
-.services.expertise li::marker {
+.services#expertise li::marker {
 	color: var(--color-2);
 }
 
-.services.expertise .quote img {
+.services#expertise .quote img {
 	width: 100px;
 	height: 100px;
 	float: right;
@@ -117,7 +122,7 @@ section {
 	);
 	border-radius: 12px;
 	padding: 25px;
-	margin: 50px 0 0 0;
+	margin: 0;
 }
 
 .services .offer h3 {
@@ -143,8 +148,8 @@ section {
 }
 
 .services .offer div.img-block {
-	width: 210px;
-	height: 210px;
+	width: 200px;
+	height: 200px;
 	border: #ddd 1px solid;
 	border-radius: 50%;
 	display: flex;
@@ -152,12 +157,12 @@ section {
 	align-items: center;
 	background: #fff;
 	margin: 10px 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .services .offer img.img-websites {
-	width: 70%;
-	height: 70%;
-	transform: translateY(10%);
+	width: 75%;
+	height: 75%;
 }
 
 .services .offer p {
@@ -168,47 +173,24 @@ section {
 .services .offer li.offer-plus {
 	min-width: 300px;
 	position: relative;
+	padding-left: 50px;
 }
 
 .services .offer li.offer-plus img {
 	max-width: 300px;
 }
 
-.services .offer li i {
+.services .offer li.offer-plus i {
 	color: var(--color-2);
 	position: absolute;
-	font-size: 100px;
+	font-size: 80px;
 	opacity: 0.1;
 	left: 0;
-	bottom: 20px;
+	top: 40px;
 }
 
 .services .offer ul img {
 	width: 300px;
-}
-
-.services .contact-cta {
-	text-align: center;
-}
-
-.services .contact-cta .contact-cta-subtitle {
-	position: relative;
-	padding-top: 50px;
-}
-
-.services .contact-cta .contact-cta-subtitle i {
-	background-color: var(--color-2);
-	color: #fff;
-	padding: 10px;
-	border-radius: 50%;
-	position: absolute;
-	top: -0;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.services .contact-cta small {
-	font-size: 12px;
 }
 
 .services .questions {
@@ -245,35 +227,86 @@ section {
 	display: none;
 }
 
+div.go-down {
+	position: relative;
+	padding-bottom: 20px;
+}
+
+div.go-down i {
+	background-color: var(--color-2);
+	color: #fff;
+	padding: 10px;
+	border-radius: 50%;
+	position: absolute;
+	/* top: -50px; */
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container.contact-cta {
+	text-align: center;
+	padding: 45px 15px 60px;
+}
+
+.container.contact-cta {
+	text-align: center;
+}
+
+.container.contact-cta .contact-cta-subtitle {
+	position: relative;
+}
+
+.container.contact-cta small {
+	font-size: 12px;
+}
+
 @media (max-width: 768px) {
 	nav.active {
 		height: auto;
 	}
 
+	.services.branding {
+		height: 90vh;
+	}
+
+	.services.branding p.baseline {
+		font-size: 16px;
+	}
+
 	.services.branding div {
-		height: 80%;
+		position: relative;
 	}
 
-	.services.branding img {
-		display: none;
+	.services.branding div img {
+		position: absolute;
+		bottom: 15%;
+		width: 80%;
 	}
 
-	.services.branding h1 {
-		margin: 0 20px;
+	.services.branding div h1 {
+		position: absolute;
+		top: 15%;
+		margin: 0 40px;
 	}
-	.services.expertise div.text {
+
+	.services#expertise div.text {
 		padding-right: 0;
 	}
-	.services.expertise div.text img {
+
+	.services#expertise div.text img {
 		float: none;
+		display: block;
+		margin: 0 auto;
+		max-width: 80%;
+		padding-top: 20px;
 	}
 
-	.services.expertise div.text p {
+	.services#expertise div.text p {
 		padding-bottom: 10px;
 		padding-left: 10px;
 	}
 
-	.services.expertise ul {
+	.services#expertise ul {
 		font-size: 14px;
 		padding: 0 0 0 25px;
 	}
@@ -283,7 +316,7 @@ section {
 	}
 
 	.services .offer li.offer-plus {
-		min-width: 100%;
+		min-width: 90%;
 	}
 
 	.services .offer ul img {
@@ -291,15 +324,15 @@ section {
 		margin-bottom: 40px;
 	}
 
-	.services .contact-cta p {
+	.container.contact-cta p {
 		padding: 0;
 	}
 
-	.services .contact-cta small {
+	.container.contact-cta small {
 		font-size: 10px;
 		display: block;
 		width: 80%;
-		margin: 0 auto 80px;
+		margin: 0 auto;
 	}
 
 	.quote,
@@ -307,5 +340,27 @@ section {
 	.faq-container {
 		min-width: 100%;
 		margin: 30px auto;
+	}
+
+	.services .questions div.faq-container {
+		margin: 0 auto;
+	}
+
+	.services .offer li.offer-plus {
+		padding-left: 0;
+	}
+
+	.services .offer li.offer-plus i {
+		position: absolute;
+		font-size: 35px;
+		opacity: 0.1;
+		top: -25px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.services .offer ul {
+		flex-direction: column;
+		margin-top: 50px;
+		flex-wrap: wrap;
 	}
 }
