@@ -779,10 +779,17 @@
 				formulaire ci-dessous.
 			</p>
 			<div class="contact-form">
-				<form
-					action="https://getform.io/f/fa5eaefa-3b89-4495-9a7a-559949889847"
-					method="POST"
-				>
+				<form action="https://api.web3forms.com/submit" method="POST">
+					<input
+						type="hidden"
+						name="access_key"
+						value="a95dd66f-1061-4e06-99ed-2a3be1ed5bf4"
+					/>
+					<input
+						type="hidden"
+						name="subject"
+						value="New Submission from Portfolio Contact Form | www.marieange.dev"
+					/>
 					<label for="name" class="en_lang">Name:</label>
 					<label for="name" class="fr_lang">Nom :</label>
 					<input type="text" id="name" name="name" required /><br />
@@ -794,7 +801,7 @@
 					<label for="message" class="en_lang">Message:</label>
 					<label for="message" class="fr_lang">Message :</label><br />
 					<textarea id="message" name="message" required></textarea><br />
-
+					<div class="h-captcha" data-captcha="true"></div>
 					<input class="en_lang btn btn-primary" type="submit" value="Send" />
 					<input
 						class="fr_lang btn btn-primary"
@@ -855,5 +862,6 @@
 			src="https://kit.fontawesome.com/79fdbc0739.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://web3forms.com/client/script.js" async defer></script>
 	</body>
 </html>

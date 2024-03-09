@@ -466,6 +466,10 @@ section .sub-group p {
 	outline: none;
 }
 
+.contact-form .h-captcha {
+	text-align: center;
+}
+
 .contact-form .btn {
 	display: block;
 	margin: 10px auto;
