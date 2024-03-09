@@ -468,6 +468,7 @@ section .sub-group p {
 
 .contact-form .h-captcha {
 	text-align: center;
+	overflow: hidden;
 }
 
 .contact-form .btn {

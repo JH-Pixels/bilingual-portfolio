@@ -3,6 +3,10 @@ section {
 	padding: 25px 25px 0 25px;
 }
 
+section#contact {
+	padding-bottom: 100px;
+}
+
 section h2 {
 	margin-bottom: 30px;
 }
@@ -18,7 +22,7 @@ section h2 {
 .services.branding p.baseline {
 	font-size: 20px;
 	letter-spacing: 2px;
-	margin-top: 35px;
+	margin-top: 55px;
 }
 
 .services.branding p.baseline span {
@@ -246,10 +250,13 @@ div.go-down i {
 .container.contact-cta {
 	text-align: center;
 	padding: 45px 15px 60px;
+	text-align: center;
 }
 
-.container.contact-cta {
-	text-align: center;
+.container.contact-cta p {
+	display: inline-block;
+	max-width: 700px;
+	line-height: 24px;
 }
 
 .container.contact-cta .contact-cta-subtitle {
