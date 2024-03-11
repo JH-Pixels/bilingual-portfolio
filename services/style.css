@@ -270,6 +270,20 @@ div.go-down i {
 	font-size: 12px;
 }
 
+.container#contact .legal {
+	margin-top: 80px;
+	color: #222;
+	font-size: 12px;
+}
+
+.container#contact .legal a {
+	color: inherit;
+}
+
+.container#contact .legal a:hover {
+	text-decoration: none;
+}
+
 @media (max-width: 768px) {
 	nav.active {
 		height: auto;
