@@ -12,6 +12,23 @@ section h2 {
 	margin-bottom: 30px;
 }
 
+nav .logo-area {
+	color: #f3f3f3;
+}
+
+nav .logo-area a {
+	text-decoration: none;
+	cursor: default;
+}
+
+nav.active .logo-area {
+	color: var(--color-1);
+}
+
+nav.active .logo-area a span.label:hover {
+	cursor: pointer;
+}
+
 /* Hero */
 .branding {
 	background: linear-gradient(0.25turn, #ddd, #f3f3f3, #ddd);
