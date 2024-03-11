@@ -452,6 +452,9 @@
 						<p class="faq-question">
 							Pourquoi opter pour un site web personnalisé plutôt qu'un site
 							créé avec une plateforme de gestion de contenu (CMS)&nbsp;?
+							<span class="chevron-down" onclick="toggleFAQ(this)"
+								><i class="fa-solid fa-chevron-down"></i
+							></span>
 						</p>
 						<p class="faq-text">
 							Les avantages d'avoir un site web sur mesure sont nombreux.
@@ -468,7 +471,11 @@
 					<div class="faq-item">
 						<p class="faq-question">
 							Quelles sont les étapes du processus de création d'un site web
-							avec vous&nbsp;?
+							avec vous&nbsp;?<span
+								class="chevron-down"
+								onclick="toggleFAQ(this)"
+								><i class="fa-solid fa-chevron-down"></i
+							></span>
 						</p>
 						<p class="faq-text">
 							Le processus de création d'un site web débute par une consultation
@@ -488,7 +495,11 @@
 						<p class="faq-question">
 							Proposez-vous des services de référencement (SEO) pour garantir
 							que mon site web soit bien classé dans les résultats de
-							recherche&nbsp;?
+							recherche&nbsp;?<span
+								class="chevron-down"
+								onclick="toggleFAQ(this)"
+								><i class="fa-solid fa-chevron-down"></i
+							></span>
 						</p>
 						<p class="faq-text">
 							Oui, je propose des services de référencement (SEO) pour optimiser
@@ -504,7 +515,11 @@
 					<div class="faq-item">
 						<p class="faq-question">
 							Comment assurez-vous la maintenance et la gestion continue des
-							sites web que vous créez après leur mise en ligne&nbsp;?
+							sites web que vous créez après leur mise en ligne&nbsp;?<span
+								class="chevron-down"
+								onclick="toggleFAQ(this)"
+								><i class="fa-solid fa-chevron-down"></i
+							></span>
 						</p>
 						<p class="faq-text">
 							Pour assurer la maintenance et la gestion continue des sites web
@@ -519,7 +534,9 @@
 					<div class="faq-item">
 						<p class="faq-question">
 							Comment se déroule le processus de refonte de mon site web
-							existant ?
+							existant ?<span class="chevron-down" onclick="toggleFAQ(this)"
+								><i class="fa-solid fa-chevron-down"></i
+							></span>
 						</p>
 						<p class="faq-text">
 							Lorsque vous envisagez une refonte de votre site web existant,
@@ -538,7 +555,11 @@
 					<div class="faq-item">
 						<p class="faq-question">
 							Quels sont les délais de réalisation habituels pour la création
-							d'un site web personnalisé&nbsp;?
+							d'un site web personnalisé&nbsp;?<span
+								class="chevron-down"
+								onclick="toggleFAQ(this)"
+								><i class="fa-solid fa-chevron-down"></i
+							></span>
 						</p>
 						<p class="faq-text">
 							Les délais de réalisation d'un projet sont soigneusement évalués
@@ -556,7 +577,9 @@
 					<div class="faq-item">
 						<p class="faq-question">
 							Comment les tarifs sont-ils établis et quels sont les différents
-							forfaits ou options disponibles&nbsp;?
+							forfaits ou options disponibles&nbsp;?<span class="chevron-down"
+								><i class="fa-solid fa-chevron-down"></i
+							></span>
 						</p>
 						<p class="faq-text">
 							La tarification de base est établie en fonction du type de site
@@ -756,6 +779,24 @@
 			</div>
 		</footer>
 		<script src="script.js"></script>
+		<script>
+			//FAQ
+			function toggleFAQ(chevron) {
+				var faqText = chevron.parentElement.nextElementSibling;
+
+				if (faqText.style.height === "0px" || faqText.style.height === "") {
+					faqText.style.display = "block";
+					faqText.style.height = faqText.scrollHeight + "px";
+				} else {
+					faqText.style.height = "0px";
+					setTimeout(function () {
+						faqText.style.display = "none";
+					}, 300);
+				}
+
+				chevron.classList.toggle("open");
+			}
+		</script>
 		<script
 			src="https://kit.fontawesome.com/79fdbc0739.js"
 			crossorigin="anonymous"
