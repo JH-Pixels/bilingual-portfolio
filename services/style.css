@@ -151,12 +151,12 @@ section h2 {
 
 .offer li {
 	flex: 1 0 50%;
-	margin: 15px 30px;
+	margin: 15px 60px;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 420px;
+	max-width: 410px;
 }
 
 .offer div.img-block {
@@ -396,11 +396,6 @@ div.go-down i {
 		min-width: 90%;
 		margin-top: 30px;
 		padding-left: 0;
-	}
-
-	.offer.offer-extra ul li img {
-		width: 100%;
-		margin-bottom: 40px;
 	}
 
 	.offer.offer-extra li i {
