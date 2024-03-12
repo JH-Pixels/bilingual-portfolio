@@ -129,6 +129,11 @@ nav a span.label {
 	font-weight: 700;
 }
 
+.lang-switch button:focus,
+.lang-switch button:active {
+	outline: none;
+}
+
 .fr_lang,
 .en_lang {
 	transition: display 0.5s;
