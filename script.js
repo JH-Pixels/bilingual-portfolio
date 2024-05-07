@@ -52,17 +52,17 @@ const enHeading = document.querySelector("h1.en_lang");
 const frHeading = document.querySelector("h1.fr_lang");
 
 const enTexts = [
-	"Front-End <span class='highlight'>Developer</span>",
-	"<span class='highlight'>React</span> Enthusiast",
-	"Digital <span class='highlight'>Entrepreneur</span>",
 	"<span class='highlight'>Websites</span> Creator",
+	"Freelance <span class='highlight'>Developer</span>",
+
+	"<span class='highlight'>Front-End</span> Expert",
 ];
 
 const frTexts = [
-	"<span class='highlight'>Développeuse</span> Front-end",
-	"Spécialiste <span class='highlight'>React</span>",
-	"<span class='highlight'>Entrepreneuse</span> numérique",
 	"Créatrice de <span class='highlight'>sites web</span>",
+	"<span class='highlight'>Développeuse</span> Freelance",
+
+	"Experte <span class='highlight'>Front-end</span>",
 ];
 
 let currentTextIndex = 0;

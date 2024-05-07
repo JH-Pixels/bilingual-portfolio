@@ -283,7 +283,7 @@ section h3 i {
 }
 
 section p {
-	padding: 10px 0 25px;
+	padding: 10px 0 15px;
 	font-size: 16px;
 	line-height: 28px;
 }
@@ -310,6 +310,71 @@ section p a {
 section p a:hover {
 	background-color: var(--color-3);
 	padding: 0 2px;
+}
+
+/* Expertise */
+#expertise {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	padding-top: 70px;
+}
+
+#expertise div.text {
+	flex: 3;
+	padding-right: 30px;
+}
+
+#expertise div.text img {
+	max-width: 260px;
+	float: left;
+	margin: 20px 20px 20px 0;
+}
+
+#expertise div.quote {
+	margin-top: 20px;
+	flex: 1;
+}
+
+#expertise ul {
+	padding: 0 50px;
+}
+
+#expertise li {
+	margin: 0 0 10px 0;
+}
+
+#expertise li::marker {
+	color: var(--color-2);
+}
+
+#expertise .quote img {
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin: -100px 0 10px 10px;
+	border-radius: 50%;
+}
+
+/* Quote box */
+.quote {
+	background-color: var(--color-2);
+	color: #fff;
+	border-radius: 12px;
+	padding: 25px;
+}
+
+.quote p {
+	font-size: 14px;
+	line-height: 22px;
+	padding: 10px 0;
+}
+
+.quote .subtitle {
+	font-weight: bold;
+	font-size: 24px;
+	font-family: "Dosis";
 }
 
 section#about img {
@@ -492,6 +557,63 @@ section .sub-group p {
 	margin: 10px auto;
 }
 
+.prefooter {
+	background: linear-gradient(0.25turn, #f3f3f3, #fff, #f3f3f3);
+	padding: 50px 0 100px;
+}
+
+.prefooter .prefooter-title {
+	text-align: center;
+	font-family: "Dosis", sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	margin: auto 40px;
+}
+
+.prefooter div.social-media {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.prefooter div.social-media div {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+	max-width: 210px;
+	margin: 30px 10px;
+	gap: 15px;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.prefooter div.social-media div:hover {
+	transform: scale(1.05);
+}
+
+.prefooter div.social-media div:hover p {
+	font-weight: 500;
+}
+
+.prefooter div.social-media div a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.prefooter div.social-media div p {
+	font-size: 14px;
+	line-height: 22px;
+	padding: 10px 0 0;
+}
+
+.prefooter div.social-media div i {
+	font-size: 50px;
+	color: var(--color-2);
+}
+
 /* Footer */
 footer {
 	background-color: #222;
@@ -624,6 +746,27 @@ footer .links {
 		display: block;
 	}
 
+	#expertise div.text {
+		padding-right: 0;
+	}
+
+	#expertise div.text img {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		max-width: 70%;
+	}
+
+	#expertise div.text p {
+		padding-bottom: 10px;
+		padding-left: 10px;
+	}
+
+	#expertise ul {
+		font-size: 14px;
+		padding: 0 0 0 25px;
+	}
+
 	.projects {
 		padding: 0 5px;
 	}
@@ -658,6 +801,11 @@ footer .links {
 
 	footer .links {
 		width: 120px;
+	}
+
+	.prefooter div.social-media {
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
