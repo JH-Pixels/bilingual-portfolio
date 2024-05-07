@@ -96,17 +96,6 @@ nav.active .container {
 	padding: 10px 0;
 }
 
-nav a span.label {
-	font-family: "Dosis", sans-serif;
-	font-size: 13px;
-	letter-spacing: 2px;
-	background-color: var(--color-2);
-	padding: 2px 4px 2px 6px;
-	font-weight: 400;
-	color: #f3f3f3;
-	text-decoration: none;
-}
-
 /* Language */
 .lang-switch {
 	margin-right: 15px;
@@ -324,12 +313,6 @@ section p a:hover {
 #expertise div.text {
 	flex: 3;
 	padding-right: 30px;
-}
-
-#expertise div.text img {
-	max-width: 260px;
-	float: left;
-	margin: 20px 20px 20px 0;
 }
 
 #expertise div.quote {
@@ -765,6 +748,11 @@ footer .links {
 	#expertise ul {
 		font-size: 14px;
 		padding: 0 0 0 25px;
+	}
+
+	#expertise div.quote {
+		min-width: 100%;
+		margin: 40px auto;
 	}
 
 	.projects {

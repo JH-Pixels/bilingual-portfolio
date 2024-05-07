@@ -18,15 +18,22 @@ nav .logo-area {
 
 nav .logo-area a {
 	text-decoration: none;
-	cursor: default;
+	cursor: pointer;
 }
 
 nav.active .logo-area {
 	color: var(--color-1);
 }
 
-nav.active .logo-area a span.label:hover {
-	cursor: pointer;
+nav a span.label {
+	font-family: "Dosis", sans-serif;
+	font-size: 13px;
+	letter-spacing: 2px;
+	background-color: var(--color-2);
+	padding: 2px 4px 2px 6px;
+	font-weight: 400;
+	color: #f3f3f3;
+	text-decoration: none;
 }
 
 /* Hero */
