@@ -131,12 +131,7 @@ nav a span.label {
 	);
 	border-radius: 12px;
 	padding: 25px;
-	margin: 0;
-}
-
-.offer h3 {
-	font-size: 28px;
-	font-weight: 300;
+	margin: 20px 0 10px;
 }
 
 .offer ul {
@@ -149,7 +144,7 @@ nav a span.label {
 
 .offer li {
 	flex: 1 0 50%;
-	margin: 15px 60px;
+	margin: 15px 30px;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
@@ -328,6 +323,12 @@ div.go-down i {
 	text-decoration: none;
 }
 
+@media (max-width: 1040px) {
+	.offer li {
+		max-width: 310px;
+	}
+}
+
 @media (max-width: 768px) {
 	nav.active {
 		height: auto;
@@ -382,21 +383,29 @@ div.go-down i {
 		margin: 40px auto;
 	}
 
+	.offer {
+		padding: 5px;
+	}
+
 	.offer ul {
-		margin-top: 30px;
+		margin: 0;
 	}
 
 	.offer li {
-		margin: 20px 10px;
+		margin: 10px;
 	}
 
 	.offer img.img-websites {
 		margin: none;
 	}
 
+	.offer.offer-extra ul {
+		margin-top: 10px;
+	}
+
 	.offer.offer-extra li {
 		min-width: 90%;
-		margin-top: 30px;
+		margin-top: 50px;
 		padding-left: 0;
 	}
 
@@ -407,6 +416,11 @@ div.go-down i {
 		top: -25px;
 		left: 50%;
 		transform: translate(-50%, -50%);
+	}
+
+	.offer.offer-extra li img {
+		max-width: 90%;
+		margin-bottom: 10px;
 	}
 
 	.contact-cta p {
