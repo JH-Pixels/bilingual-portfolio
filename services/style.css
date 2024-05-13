@@ -78,6 +78,45 @@ nav a span.label {
 	font-weight: 200;
 }
 
+/* Expertise */
+#expertise {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	padding-top: 70px;
+}
+
+#expertise div.text {
+	flex: 3;
+	padding-right: 30px;
+}
+
+#expertise div.quote {
+	margin-top: 20px;
+	flex: 1;
+}
+
+#expertise ul {
+	padding: 0 50px;
+}
+
+#expertise li {
+	margin: 0 0 10px 0;
+}
+
+#expertise li::marker {
+	color: var(--color-2);
+}
+
+#expertise .quote img {
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin: -100px 0 10px 10px;
+	border-radius: 50%;
+}
+
 /* Offer */
 .offer {
 	text-align: center;
@@ -315,6 +354,32 @@ div.go-down i {
 
 	.branding div h1 {
 		margin: 0 40px;
+	}
+
+	#expertise div.text {
+		padding-right: 0;
+	}
+
+	#expertise div.text img {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		max-width: 70%;
+	}
+
+	#expertise div.text p {
+		padding-bottom: 10px;
+		padding-left: 10px;
+	}
+
+	#expertise ul {
+		font-size: 14px;
+		padding: 0 0 0 25px;
+	}
+
+	#expertise div.quote {
+		min-width: 100%;
+		margin: 40px auto;
 	}
 
 	.offer ul {

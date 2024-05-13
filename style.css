@@ -245,12 +245,9 @@ section {
 	padding: 70px 25px 100px;
 }
 
-section#about {
-	margin-top: 70px;
-}
 section h2 {
 	font-size: 32px;
-	line-height: 32px;
+	line-height: 38px;
 	color: var(--color-1);
 }
 
@@ -301,43 +298,37 @@ section p a:hover {
 	padding: 0 2px;
 }
 
-/* Expertise */
-#expertise {
+section .columns {
+	margin-top: 50px;
 	display: flex;
-	align-items: flex-start;
-	flex-wrap: wrap;
-	margin-top: 20px;
-	padding-top: 70px;
+	gap: 40px;
 }
 
-#expertise div.text {
-	flex: 3;
-	padding-right: 30px;
-}
-
-#expertise div.quote {
-	margin-top: 20px;
+section .sub-group {
 	flex: 1;
 }
 
-#expertise ul {
-	padding: 0 50px;
+section .sub-group p {
+	font-size: 14px;
+	line-height: 26px;
+	margin-top: 10px;
 }
 
-#expertise li {
-	margin: 0 0 10px 0;
+/* Intro */
+#intro {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 15px;
 }
 
-#expertise li::marker {
-	color: var(--color-2);
+#intro div.text {
+	flex: 3;
 }
 
-#expertise .quote img {
-	width: 100px;
-	height: 100px;
-	float: right;
-	margin: -100px 0 10px 10px;
-	border-radius: 50%;
+#intro div.quote {
+	margin-top: 20px;
+	flex: 1;
 }
 
 /* Quote box */
@@ -348,10 +339,12 @@ section p a:hover {
 	padding: 25px;
 }
 
-.quote p {
-	font-size: 14px;
-	line-height: 22px;
-	padding: 10px 0;
+.quote img {
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin: -100px 0 10px 10px;
+	border-radius: 50%;
 }
 
 .quote .subtitle {
@@ -360,38 +353,13 @@ section p a:hover {
 	font-family: "Dosis";
 }
 
-section#about img {
-	max-width: 300px;
-	border-radius: 50%;
-}
-
-.intro {
-	display: flex;
-	margin-top: 40px;
-}
-
-.profile-pic {
-	max-width: 300px;
-	max-height: 300px;
-	border-radius: 50%;
-	margin-right: 40px;
-}
-
-section .columns {
-	margin-top: 50px;
-	display: flex;
-}
-
-section .sub-group {
-	flex: 1;
-	margin-right: 30px;
-}
-
-section .sub-group p {
+.quote p {
 	font-size: 14px;
-	line-height: 26px;
-	margin-top: 10px;
+	line-height: 22px;
+	padding: 10px 0;
 }
+
+/* Portfolio */
 
 .projects {
 	display: flex;
@@ -489,6 +457,20 @@ section .sub-group p {
 
 #portfolio .btn-group {
 	margin-top: 0;
+}
+
+/* About */
+
+.bio {
+	display: flex;
+	margin-top: 40px;
+}
+
+.profile-pic {
+	max-width: 300px;
+	max-height: 300px;
+	border-radius: 50%;
+	margin-right: 40px;
 }
 
 /* Contact */
@@ -729,30 +711,13 @@ footer .links {
 		display: block;
 	}
 
-	#expertise div.text {
-		padding-right: 0;
-	}
-
-	#expertise div.text img {
-		float: none;
-		display: block;
-		margin: 0 auto;
-		max-width: 70%;
-	}
-
-	#expertise div.text p {
-		padding-bottom: 10px;
-		padding-left: 10px;
-	}
-
-	#expertise ul {
-		font-size: 14px;
-		padding: 0 0 0 25px;
-	}
-
-	#expertise div.quote {
-		min-width: 100%;
+	#intro div.quote {
 		margin: 40px auto;
+	}
+
+	.profile-pic {
+		max-width: 220px;
+		max-height: 220px;
 	}
 
 	.projects {
@@ -802,7 +767,11 @@ footer .links {
 		font-size: 12px;
 	}
 
-	.intro {
+	#intro div.quote {
+		min-width: 100%;
+	}
+
+	.bio {
 		flex-direction: column;
 		align-items: center;
 		margin-top: 20px;
