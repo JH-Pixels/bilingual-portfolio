@@ -69,7 +69,7 @@ let currentTextIndex = 0;
 
 function updateText() {
 	const enUnderline = enHeading.querySelector(".underline");
-	const deUnderline = frHeading.querySelector(".underline");
+	const deUnderline = deHeading.querySelector(".underline");
 
 	enUnderline.classList.add("hidden");
 	deUnderline.classList.add("hidden");
