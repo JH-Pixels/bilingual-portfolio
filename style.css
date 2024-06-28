@@ -229,7 +229,7 @@ nav.active .container {
 	margin: 15px;
 	border: solid 1px var(--color-2);
 	border-radius: 30px;
-	background-color: rgba(255, 255, 255, 0.05);
+	background-color: rgba(0, 0, 0, 0.5);
 	color: #A6A6A6;
 	font-size: 14px;
 	line-height: 26px;
@@ -290,7 +290,7 @@ section p br {
 section p span {
 	color: var(--color-2);
 	font-weight: 600;
-	background-color: rgba(15, 163, 126, 0.05);
+	background-color: rgba(133, 15, 163, 0.05);
 }
 
 section p a {
@@ -433,7 +433,7 @@ section .sub-group p {
 }
 
 .project .project-btn {
-	background: linear-gradient(rgb(0, 0, 0), white) padding-box,
+	background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
 		var(--color-gradient) border-box;
 	border: 2px solid transparent;
 	cursor: pointer;
