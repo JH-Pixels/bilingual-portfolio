@@ -55,15 +55,15 @@ const enHeading = document.querySelector("h1.en_lang");
 const deHeading = document.querySelector("h1.de_lang");
 
 const enTexts = [
-	"<span class='highlight'>Websites</span> Creator",
-	"Freelance <span class='highlight'>Developer</span>",
+	"<span class='highlight'>Software</span> Development",
+	"Cyber <span class='highlight'>Security</span>",
 
 	"<span class='highlight'>Front-End</span> Expert",
 ];
 
 const deTexts = [
-	"Créatrice de <span class='highlight'>sites web</span>",
-	"<span class='highlight'>Développeuse</span> Freelance",
+	"Software <span class='highlight'>Entwicklung</span>",
+	"<span class='highlight'>Cyber</span>-Sicherheit",
 
 	"Experte <span class='highlight'>Front-end</span>",
 ];
