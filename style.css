@@ -438,7 +438,7 @@ section .sub-group p {
 .project .project-btn:hover {
 	background: var(--color-gradient) padding-box,
 		var(--color-gradient) border-box;
-	color: #fff;
+	color: #000000;
 }
 
 .project-main {
