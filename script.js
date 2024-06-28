@@ -66,9 +66,9 @@ const enTexts = [
 const deTexts = [
 	"Software <span class='highlight'>Entwicklung</span>",
 	"<span class='highlight'>Cyber</span>-Sicherheit",
-	"UI/UX <span class='Design'>Front-end</span>",
+	"UI/UX <span class='highlight'>Design</span>",
 	"<span class='highlight'>Apple</span> & deren Ecosystem",
-	"<span class='Design'>Virtualisation</span>",
+	"<span class='highlight'>Virtualisation</span>",
 ];
 
 let currentTextIndex = 0;
