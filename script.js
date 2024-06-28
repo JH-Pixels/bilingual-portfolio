@@ -1,30 +1,33 @@
 // language switch
 document.addEventListener("DOMContentLoaded", function () {
-	const deBtn = document.getElementById("deBtn");
-	const enBtn = document.getElementById("enBtn");
-	const deLang = document.querySelectorAll(".de_lang");
-	const enLang = document.querySelectorAll(".en_lang");
+    const deBtn = document.getElementById("deBtn");
+    const enBtn = document.getElementById("enBtn");
+    const deLang = document.querySelectorAll(".de_lang");
+    const enLang = document.querySelectorAll(".en_lang");
 
-	const userLanguage = navigator.language || navigator.userLanguage;
-	if (userLanguage.startsWith("de")) {
-		switchLanguage(deLang, deBtn);
-	} else {
-		switchLanguage(enLang, enBtn);
-	}
+    const userLanguage = navigator.language || navigator.userLanguage;
+    if (userLanguage.startsWith("de")) {
+        switchLanguage(deLang, deBtn);
+    } else {
+        switchLanguage(enLang, enBtn);
+    }
 
-	deBtn.addEventListener("click", () => switchLanguage(deLang, deBtn));
-	enBtn.addEventListener("click", () => switchLanguage(enLang, enBtn));
+    deBtn.addEventListener("click", () => switchLanguage(deLang, deBtn));
+    enBtn.addEventListener("click", () => switchLanguage(enLang, enBtn));
 
-	function switchLanguage(lang, langBtn) {
-		lang.forEach((element) => element.classList.remove("inactive-lang"));
+    function switchLanguage(langToShow, langBtn) {
+        // Hide all language elements
+        deLang.forEach((element) => element.style.display = "none");
+        enLang.forEach((element) => element.style.display = "none");
 
-		const otherLang = langBtn === deBtn ? enLang : deLang;
-		otherLang.forEach((element) => element.classList.add("inactive-lang"));
+        // Show the selected language
+        langToShow.forEach((element) => element.style.display = "");
 
-		langBtn.classList.add("active-button");
-		const otherLangBtn = langBtn === deBtn ? enBtn : deBtn;
-		otherLangBtn.classList.remove("active-button");
-	}
+        // Update button styles
+        deBtn.classList.remove("active-button");
+        enBtn.classList.remove("active-button");
+        langBtn.classList.add("active-button");
+    }
 });
 
 // nav
