@@ -223,7 +223,7 @@ nav.active .container {
 	border: solid 1px var(--color-2);
 	border-radius: 30px;
 	background-color: rgba(255, 255, 255, 0.05);
-	color: #fff;
+	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
 	letter-spacing: 2px;
@@ -261,7 +261,7 @@ section h3 {
 
 section h3 i {
 	background-color: var(--color-2);
-	color: #fff;
+	color: #000000;
 	padding: 6px 6px;
 	width: 34px;
 	text-align: center;
@@ -426,7 +426,7 @@ section .sub-group p {
 }
 
 .project .project-btn {
-	background: linear-gradient(white, white) padding-box,
+	background: linear-gradient(rgb(0, 0, 0), white) padding-box,
 		var(--color-gradient) border-box;
 	border: 2px solid transparent;
 	cursor: pointer;
@@ -523,7 +523,7 @@ section .sub-group p {
 }
 
 .prefooter {
-	background: linear-gradient(0.25turn, #f3f3f3, #fff, #f3f3f3);
+	background: linear-gradient(0.25turn, #000000, #000000, #000000);
 	padding: 50px 0 100px;
 }
 
