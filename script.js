@@ -1,28 +1,28 @@
 // language switch
 document.addEventListener("DOMContentLoaded", function () {
-	const frBtn = document.getElementById("frBtn");
+	const deBtn = document.getElementById("deBtn");
 	const enBtn = document.getElementById("enBtn");
-	const frLang = document.querySelectorAll(".fr_lang");
+	const deLang = document.querySelectorAll(".de_lang");
 	const enLang = document.querySelectorAll(".en_lang");
 
 	const userLanguage = navigator.language || navigator.userLanguage;
-	if (userLanguage.startsWith("fr")) {
-		switchLanguage(frLang, frBtn);
+	if (userLanguage.startsWith("de")) {
+		switchLanguage(deLang, deBtn);
 	} else {
 		switchLanguage(enLang, enBtn);
 	}
 
-	frBtn.addEventListener("click", () => switchLanguage(frLang, frBtn));
+	deBtn.addEventListener("click", () => switchLanguage(deLang, deBtn));
 	enBtn.addEventListener("click", () => switchLanguage(enLang, enBtn));
 
 	function switchLanguage(lang, langBtn) {
 		lang.forEach((element) => element.classList.remove("inactive-lang"));
 
-		const otherLang = langBtn === frBtn ? enLang : frLang;
+		const otherLang = langBtn === deBtn ? enLang : deLang;
 		otherLang.forEach((element) => element.classList.add("inactive-lang"));
 
 		langBtn.classList.add("active-button");
-		const otherLangBtn = langBtn === frBtn ? enBtn : frBtn;
+		const otherLangBtn = langBtn === deBtn ? enBtn : deBtn;
 		otherLangBtn.classList.remove("active-button");
 	}
 });
@@ -49,7 +49,7 @@ function fixNav() {
 
 // h1 update
 const enHeading = document.querySelector("h1.en_lang");
-const frHeading = document.querySelector("h1.fr_lang");
+const deHeading = document.querySelector("h1.de_lang");
 
 const enTexts = [
 	"<span class='highlight'>Websites</span> Creator",
@@ -58,7 +58,7 @@ const enTexts = [
 	"<span class='highlight'>Front-End</span> Expert",
 ];
 
-const frTexts = [
+const deTexts = [
 	"Créatrice de <span class='highlight'>sites web</span>",
 	"<span class='highlight'>Développeuse</span> Freelance",
 
@@ -69,17 +69,17 @@ let currentTextIndex = 0;
 
 function updateText() {
 	const enUnderline = enHeading.querySelector(".underline");
-	const frUnderline = frHeading.querySelector(".underline");
+	const deUnderline = frHeading.querySelector(".underline");
 
 	enUnderline.classList.add("hidden");
-	frUnderline.classList.add("hidden");
+	deUnderline.classList.add("hidden");
 
 	setTimeout(() => {
 		enUnderline.innerHTML = enTexts[currentTextIndex];
-		frUnderline.innerHTML = frTexts[currentTextIndex];
+		deUnderline.innerHTML = deTexts[currentTextIndex];
 
 		enUnderline.classList.remove("hidden");
-		frUnderline.classList.remove("hidden");
+		deUnderline.classList.remove("hidden");
 		currentTextIndex = (currentTextIndex + 1) % enTexts.length;
 	}, 500);
 }
