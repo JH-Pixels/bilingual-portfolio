@@ -66,6 +66,12 @@ nav a.logo {
 	padding-left: 20px;
 }
 
+.navbar-logo {
+	height: 40px; /* Adjust as needed */
+	width: auto;
+	margin-right: 20px; /* Adjust spacing as needed */
+  }
+
 nav ul {
 	display: flex;
 	list-style-type: none;
@@ -97,11 +103,6 @@ nav.active .container {
 	padding: 10px 0;
 }
 
-.navbar-logo {
-	height: 40px; /* Adjust as needed */
-	width: auto;
-	margin-right: 20px; /* Adjust spacing as needed */
-  }
 
 /* Language */
 .lang-switch {
