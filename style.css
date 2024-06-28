@@ -5,6 +5,7 @@
 	--color-1: #0a0a0a;
 	--color-2: #ab45d3;
 	--color-3: #efa11c;
+	--color-4: #A6A6A6;
 	--color-gradient: linear-gradient(to right, #00767a, #0fa681, #89d377);
 }
 
@@ -17,7 +18,7 @@
 
 body {
 	font-family: "Open Sans", sans-serif;
-	color: var(--color-1);
+	color: var(--color-4);
 }
 
 h1,
