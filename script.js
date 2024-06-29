@@ -53,7 +53,6 @@ function fixNav() {
 // h1 update
 const enHeading = document.querySelector("h1.en_lang");
 const deHeading = document.querySelector("h1.de_lang");
-content="Software Development, Cyber Security, Design, Linux, The Apple Ecosystem, Chess, Vim, Health & Lifestyle, Software Entwicklung, Cyber-Sicherheit, Das Apple Ecosystem, Schach, Vim, Gesundheit"
 
 const enTexts = [
 	"<span class='highlight'>Software</span> Development",
