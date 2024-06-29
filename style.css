@@ -69,9 +69,9 @@ nav a.logo {
 }
 
 .navbar-logo {
-	height: 40px; /* Adjust as needed */
+	height: 25px; 
 	width: auto;
-	margin-right: 20px; /* Adjust spacing as needed */
+	margin-right: 0px; 
   }
 
 nav ul {
