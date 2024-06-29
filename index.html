@@ -43,7 +43,7 @@
 					<li><a href="#portfolio">Projects</a></li>
 					<li><a href="#about">WhoAmI?</a></li>
 
-					<li><a href="#contact">Contact Me/a></li>
+					<li><a href="#contact">Contact Me</a></li>
 				</ul>
 				<ul class="de_lang">
 					<li><a href="#portfolio">Projekte</a></li>
@@ -987,6 +987,13 @@
 		></script>
 		<script src="https://web3forms.com/client/script.js" async defer></script>
 		<canvas class="background"></canvas>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script> 		<!--ParticlesJS CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+		<script>
+			window.onload = function() {
+			Particles.init({
+				selector: '.background'
+			});
+			};
+		</script> 		<!--ParticlesJS CDN -->
 	</body>
 </html>
