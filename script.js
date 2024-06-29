@@ -60,6 +60,7 @@ const enTexts = [
 	"<span class='highlight'>Virtualization</span> technologies",
 	"UI/UX <span class='highlight'>Design</span>",
 	"<span class='highlight'>Apple</span> & their Ecosystem",
+	"And a <span class='highligth'>LOT</span> more",
 ];
 
 const deTexts = [
@@ -68,6 +69,7 @@ const deTexts = [
 	"UI/UX <span class='highlight'>Design</span>",
 	"<span class='highlight'>Apple</span> & deren Ecosystem",
 	"<span class='highlight'>Virtualisation</span>",
+	"Und <span class='highligth'>VIEL</span> mehr",
 ];
 
 let currentTextIndex = 0;
