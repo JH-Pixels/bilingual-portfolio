@@ -252,6 +252,11 @@ nav.active .container {
 	background-color: var(--color-2);
 	transform: scale(0.99);
 }
+.center-logo {
+	height: 40px; /* Adjust as needed */
+	width: auto;
+	/*margin-right: 0px; /* Adjust spacing as needed */
+  }
 
 /* Sections */
 section {
