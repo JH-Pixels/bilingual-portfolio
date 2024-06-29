@@ -112,6 +112,8 @@ nav.active .container {
 }
 
 .lang-switch button {
+	background-color: var(--color-2);
+	color: var(--color-4);
 	font-family: inherit;
 	border: none;
 	border-radius: 2px;
