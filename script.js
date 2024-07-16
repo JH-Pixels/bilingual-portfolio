@@ -59,7 +59,6 @@ const enTexts = [
 	"Cyber <span class='highlight'>Security</span>",
 	"<span class='highlight'>Virtualization</span> technologies",
 	"UI/UX <span class='highlight'>Design</span>",
-	"<span class='highlight'>Apple</span> & their Ecosystem",
 	"And a <span class='highligth'>LOT</span> more",
 ];
 
@@ -67,7 +66,6 @@ const deTexts = [
 	"Software <span class='highlight'>Entwicklung</span>",
 	"<span class='highlight'>Cyber</span>-Sicherheit",
 	"UI/UX <span class='highlight'>Design</span>",
-	"<span class='highlight'>Apple</span> & deren Ecosystem",
 	"<span class='highlight'>Virtualisation</span>",
 	"Und <span class='highligth'>VIEL</span> mehr",
 ];
